@@ -1,6 +1,9 @@
 require 'rspec/core'
 
-if defined? Sidekiq::Batch
+#if defined? Sidekiq::Batch
+
+#JSS - removing this code since it breaks all stubs in tests
+#if false
   module RSpec
     module Sidekiq
       class NullObject
